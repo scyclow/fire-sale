@@ -1,13 +1,13 @@
 {
   "author": "Steve Pikelny",
   "license": "MIT",
-  "name": "es6-skel",
+  "name": "fire-sale-app",
   "version": "0.1.0",
-  "description": "Build skeleton for ES6 project",
+  "description": "App to help sell my crap",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scyclow/es6-skel"
+    "url": "https://github.com/scyclow/fire-sale"
   },
   "scripts": {
     "clean": "rimraf dist",
