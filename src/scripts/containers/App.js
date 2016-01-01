@@ -11,7 +11,6 @@ require('../../styles/application.scss');
 class App extends React.Component {
   render() {
     const { count, isMobile } = this.props;
-
     return (
       <div>
         <Thing content="header bar" />
@@ -25,7 +24,10 @@ class App extends React.Component {
 }
 
 const select = (state) => {
-  return { count: state.bleh.count, isMobile: false };
+  const mobileWidth = 500;
+  const isMobile = state.windowSize.width < mobileWidth;
+
+  return { count: state.bleh.count, isMobile };
 };
 
 export default connect(select)(App);

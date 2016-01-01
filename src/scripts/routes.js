@@ -6,8 +6,8 @@ import Thing from './components/Thing'
 
 const history = createHistory();
 
-const AnotherRoute = () => <div>blehblehbleh</div>
-const SomeRoute = () => <div>gniguniugnidugti</div>
+const AnotherRoute = () => <div>is mobile</div>
+const SomeRoute = () => <div>is not mobile</div>
 
 const getRoutes = (isMobile) => (
   <Router history={history}>
