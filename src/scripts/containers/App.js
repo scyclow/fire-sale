@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { routes } from '../routes';
 
 import Thing from '../components/Thing';
+import ItemNav from './ItemNav';
 import ScreenSplit from '../components/ScreenSplit';
 
 require('../../styles/application.scss');
@@ -15,7 +16,7 @@ class App extends React.Component {
       <div>
         <Thing content="header bar" />
         <ScreenSplit showNavigator={!isMobile}>
-          <Thing content={'navigator' + count} />
+          <ItemNav />
           {routes}
         </ScreenSplit>
       </div>
