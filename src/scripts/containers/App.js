@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { getRoutes } from '../routes';
+import { routes } from '../routes';
 
 import Thing from '../components/Thing';
 import ScreenSplit from '../components/ScreenSplit';
@@ -16,7 +16,7 @@ class App extends React.Component {
         <Thing content="header bar" />
         <ScreenSplit showNavigator={!isMobile}>
           <Thing content={'navigator' + count} />
-          {getRoutes(isMobile)}
+          {routes}
         </ScreenSplit>
       </div>
     );
