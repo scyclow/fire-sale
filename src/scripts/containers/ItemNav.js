@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
+import ItemCard from '../components/ItemCard';
+
 const select = (state) => {
   let items = [
     {name: 'item1', id: 1},
@@ -20,9 +22,7 @@ class ItemNav extends React.Component {
     return (
       <div>
         {items.map(item =>
-          <div key={item.id}>
-            <Link to={`/items/${item.id}`}>{item.name}</Link>
-          </div>
+          <ItemCard key={item.id} id={item.id} name={item.name} />
         )}
       </div>
     );
