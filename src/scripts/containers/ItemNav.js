@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
 const select = (state) => {
@@ -19,7 +20,9 @@ class ItemNav extends React.Component {
     return (
       <div>
         {items.map(item =>
-          <div key={item.id}>{item.name}</div>
+          <div key={item.id}>
+            <Link to={`/items/${item.id}`}>{item.name}</Link>
+          </div>
         )}
       </div>
     );

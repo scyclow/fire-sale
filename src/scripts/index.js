@@ -7,26 +7,17 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers/rootReducer';
 
 import { syncReduxAndRouter } from 'redux-simple-router';
-import { history } from './routes';
+import { history, routes } from './routes';
 
 import resizeWindow from './utils/resizeWindow';
 
-import App from './containers/App';
-
 const store = createStore(rootReducer);
 syncReduxAndRouter(history, store);
-
 resizeWindow(store.dispatch.bind(store));
-
-     //////////////////////////////////////////////////////////
-    ////////// FOR TESTING PURPOSES ONLY /////////////////////
-   /**/ import { count } from './actions' ///////////////////
-  /**/ window.count = (n) => store.dispatch(count(n)) //////
- //////////////////////////////////////////////////////////
 
 render(
   <Provider store={store}>
-    <App />
+    {routes}
   </Provider>,
 
   document.getElementById('app')
