@@ -18,7 +18,7 @@ export const newBidtime = (hours) => ({
   hours
 });
 
-const biddingState = () => store.getState().bidding
+const biddingState = () => store.getState().bids
 
 const newBidId = () => biddingState().size;
 const getExpiration = () => {

@@ -2,10 +2,10 @@ import { combineReducers } from 'redux';
 import { routeReducer } from 'redux-simple-router';
 
 import windowSize from './windowSize';
-import bidding from './bidding';
+import bids from './bids';
 
 const rootReducer = combineReducers({
-  bidding,
+  bids,
   windowSize,
   routing: routeReducer
 });

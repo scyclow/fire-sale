@@ -3,10 +3,11 @@ import { IndexRoute, Route, Router } from 'react-router';
 import { createHistory } from 'history';
 
 import mobilize from './utils/MobilizeComponent';
-import ItemNav from './containers/ItemNav';
-import App from './containers/App';
 
-const Item = ({ params }) => <div>item {params.id}</div>
+import App from './containers/App';
+import ItemNav from './containers/ItemNav';
+import ItemSummary from './containers/ItemSummary';
+
 const Summary = () => <div>summary</div>
 
 const history = createHistory();
@@ -21,7 +22,7 @@ const routes = (
     <Route path="/" component={App}>
       <IndexRoute component={MobilizedComponent} />
       <Route path="summary" component={Summary} />
-      <Route path="items/:id" component={Item} />
+      <Route path="items/:id" component={ItemSummary} />
     </Route>
   </Router>
 )
