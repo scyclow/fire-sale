@@ -2,6 +2,11 @@ import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 
 class ItemCard extends Component {
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired
+  }
+
   render() {
     const { name, id } = this.props;
 
@@ -12,10 +17,5 @@ class ItemCard extends Component {
     );
   }
 }
-
-ItemCard.propTypes = {
-  name: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired
-};
 
 export default ItemCard;
