@@ -3,7 +3,7 @@ import moment from 'moment';
 import store from '../store/configureStore';
 
 export const RESIZE_WINDOW = 'RESIZE_WINDOW';
-// export const NEW_BIDTIME = 'NEW_BIDTIME';
+export const NEW_BIDTIME = 'NEW_BIDTIME';
 export const NEW_BID = 'NEW_BID';
 // export const ITEM_SOLD = 'ITEM_SOLD';
 // export const ADD_TO_BLOCK = 'ADD_TO_BLOCK';
@@ -13,18 +13,25 @@ export const resizeWindow = (width) => ({
   width
 });
 
-// export const newBidtime = (time) => ({
-//   type: NEW_BIDTIME,
-//   time
-// });
+export const newBidtime = (hours) => ({
+  type: NEW_BIDTIME,
+  hours
+});
 
-const newBidId = () => store.getState().bidding.size;
+const biddingState = () => store.getState().bidding
 
-export const newBid = ({ ammount, bidderName, expiresAt, itemId }) => ({
+const newBidId = () => biddingState().size;
+const getExpiration = () => {
+  let now = moment();
+  let timeLeft = biddingState().get('currentBidTime');
+  return now.add(timeLeft, 'hours');
+}
+
+export const newBid = ({ amount, bidderName, itemId }) => ({
   type: NEW_BID,
   createdAt: moment(),
-  expiresAt,
-  ammount,
+  expiresAt: getExpiration(),
+  amount,
   bidderName,
   bidId: newBidId(),
   itemId
