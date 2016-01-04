@@ -1,0 +1,44 @@
+{
+  "bids": {
+    "currentBidTime": 1,
+    "0": {
+      "createdAt": "moment()",
+      "expiresAt": "moment().add(2, 'hours')",
+      "amount": "100",
+      "bidderName": "Steve",
+      "bidId": "0",
+      "comment": "this thing fuckn rocks",
+      "itemId": "4"
+    },
+    "0": {
+      "createdAt": "moment()",
+      "expiresAt": "moment().add(2, 'hours')",
+      "amount": 200,
+      "bidderName": "Bill",
+      "bidId": "1",
+      "comment": "this thing fuckn rocks",
+      "itemId": "3"
+    }
+  },
+  "items": {
+    "block": ["1", "2"],
+    "1": {
+      "name": "bed",
+      "id": "1",
+      "notes": "pickup on 1/14",
+      "imgUrl": "http://sdfgsrg.com",
+      "bids": ["0"],
+      "minBid": 20,
+      "soldId": null
+    },
+    "2": {
+      "name": "couch",
+      "id": "2",
+      "notes": "seen lots of 'action', if ya know what i mean.",
+      "imgUrl": "http://sdfjjhgsrg.com",
+      "bids": ["1"],
+      "minBid": 20,
+      "soldId": null
+    }
+  }
+}

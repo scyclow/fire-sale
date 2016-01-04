@@ -5,6 +5,7 @@ import store from '../store/configureStore';
 export const RESIZE_WINDOW = 'RESIZE_WINDOW';
 export const NEW_BIDTIME = 'NEW_BIDTIME';
 export const NEW_BID = 'NEW_BID';
+export const SET_STATE = 'SET_STATE';
 // export const ITEM_SOLD = 'ITEM_SOLD';
 // export const ADD_TO_BLOCK = 'ADD_TO_BLOCK';
 
@@ -19,7 +20,6 @@ export const newBidtime = (hours) => ({
 });
 
 const biddingState = () => store.getState().bids
-
 const newBidId = () => biddingState().size.toString();
 const getExpiration = () => {
   let now = moment();
@@ -43,6 +43,11 @@ export const itemSold = (itemId, bidId) => ({
   itemId: itemId.toString(),
   bidId: bidId.toString()
 });
+
+export const setState = (dbState) => ({
+  type: SET_STATE,
+  dbState
+})
 
 // export const addToBlock = (itemIds) => ({
 //   type: ADD_TO_BLOCK,

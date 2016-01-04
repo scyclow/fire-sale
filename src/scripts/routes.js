@@ -9,6 +9,7 @@ import ItemNav from './containers/ItemNav';
 import ItemSummary from './containers/ItemSummary';
 
 const Summary = () => <div>summary</div>
+const FuckOff = () => <div>Fuck off. This aint no route</div>
 
 const history = createHistory();
 
@@ -23,6 +24,7 @@ const routes = (
       <IndexRoute component={MobilizedComponent} />
       <Route path="summary" component={Summary} />
       <Route path="items/:id" component={ItemSummary} />
+      <Route path="*" component={FuckOff} />
     </Route>
   </Router>
 )

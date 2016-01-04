@@ -8,10 +8,16 @@ import store from './store/configureStore';
 import { syncReduxAndRouter } from 'redux-simple-router';
 import { history, routes } from './routes';
 
+import api from './api/db';
+const { hydrate } = api; // why the fuck do i need to do this?
+
 import resizeWindow from './utils/resizeWindow';
 
+
 syncReduxAndRouter(history, store);
-resizeWindow(store.dispatch.bind(store));
+resizeWindow(store.dispatch);
+
+hydrate(store.dispatch);
 
 render(
   <Provider store={store}>
