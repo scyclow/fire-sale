@@ -14,6 +14,7 @@
     "serve": "node server.js",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
+    "serveStatic": "npm run build && node staticServer.js",
     "unit": "karma start"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.0",
     "babel-preset-stage-1": "^6.3.13",
+    "connect": "^3.4.0",
     "css-loader": "^0.18.0",
     "eslint": "^1.5.0",
     "eslint-config-airbnb": "0.0.8",
@@ -61,6 +63,7 @@
     "react-transform-hmr": "^1.0.1",
     "rimraf": "^2.4.3",
     "sass-loader": "^2.0.1",
+    "serve-static": "^1.10.0",
     "style-loader": "^0.12.4",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
