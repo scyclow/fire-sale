@@ -22,6 +22,6 @@ render(
 );
 
 ///// FOR TESTING PURPOSES ONLY
-import {newBid} from './actions';
+import {newBid, itemSold} from './actions';
 window.newBid = (...args) => store.dispatch(newBid(...args))
 window.store = store

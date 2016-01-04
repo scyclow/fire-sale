@@ -12,28 +12,30 @@ const initialState = Map({
     expiresAt: moment().add(2, 'hours'),
     amount: 100,
     bidderName: 'Steve',
-    bidId: 0,
-    itemId: 4
+    bidId: '0',
+    comment: 'this thing fuckn rocks',
+    itemId: '4'
   },
   1: {
     createdAt: moment(),
     expiresAt: moment().add(2, 'hours'),
     amount: 200,
     bidderName: 'Bill',
-    bidId: 1,
-    itemId: 3
+    bidId: '1',
+    comment: 'this thing fuckn rocks',
+    itemId: '3'
   }
 });
 
 const reducer = handleActions({
-  [NEW_BID]: (state, { amount, bidderName, bidId, itemId, createdAt, expiresAt }) => {
-    return state.set(
-      bidId, { amount, bidderName, bidId, itemId, createdAt, expiresAt }
-    );
-  },
-  [NEW_BIDTIME]: (state, { hours }) => {
-    return state.set('currentBidTime', hours)
-  }
+  [NEW_BID]: (state, { amount, bidderName, bidId, comment, itemId, createdAt, expiresAt }) =>
+    state.set(
+      bidId, { amount, bidderName, bidId, comment, itemId, createdAt, expiresAt }
+    ),
+
+  [NEW_BIDTIME]: (state, { hours }) =>
+    state.set('currentBidTime', hours)
+
 }, initialState);
 
 export default reducer;

@@ -20,28 +20,29 @@ export const newBidtime = (hours) => ({
 
 const biddingState = () => store.getState().bids
 
-const newBidId = () => biddingState().size;
+const newBidId = () => biddingState().size.toString();
 const getExpiration = () => {
   let now = moment();
   let timeLeft = biddingState().get('currentBidTime');
   return now.add(timeLeft, 'hours');
 }
 
-export const newBid = ({ amount, bidderName, itemId }) => ({
+export const newBid = ({ amount, bidderName, itemId, comment }) => ({
   type: NEW_BID,
   createdAt: moment(),
   expiresAt: getExpiration(),
   amount,
   bidderName,
   bidId: newBidId(),
-  itemId
+  comment,
+  itemId: itemId.toString()
 });
 
-// export const itemSold = (itemId, bidId) => ({
-//   type: ITEM_SOLD,
-//   itemId,
-//   bidId
-// });
+export const itemSold = (itemId, bidId) => ({
+  type: ITEM_SOLD,
+  itemId: itemId.toString(),
+  bidId: bidId.toString()
+});
 
 // export const addToBlock = (itemIds) => ({
 //   type: ADD_TO_BLOCK,

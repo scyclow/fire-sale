@@ -1,23 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 const select = (state, props) => {
-  let items = { // state.items
-    1: {
-      name: 'item1 asdvkb'
-    },
-    2: {
-      name: 'item2 asdvkb'
-    },
-    3: {
-      name: 'item3 asdvkb'
-    },
-    4: {
-      name: 'item4 asdvkb'
-    }
-  };
-  const itemId = props.params.id
-  return { item: items[itemId] };
+  const items = state.items;
+  const itemId = props.params.id;
+
+  return { item: items.get(itemId.toString()).toJS() };
 };
 
 class ItemSummary extends Component {
