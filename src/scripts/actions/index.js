@@ -41,9 +41,9 @@ export const newBid = ({ amount, bidderName, itemId, comment }) => {
       - handle moment rehydration
   */
   const id = newBidId();
+  const createdAt = moment();
+  const expiresAt = getExpiration();
   const bid = {
-    // createdAt: moment(),
-    // expiresAt: getExpiration(),
     amount,
     bidderName,
     bidId: id,
@@ -51,12 +51,18 @@ export const newBid = ({ amount, bidderName, itemId, comment }) => {
     itemId: itemId
   };
 
+  const dbBid = {
+    createdAt: createdAt.format(),
+    expiresAt: expiresAt.format(),
+    ...bid
+  }
+
   // update database shit. this sucks. FIXME ?
-  db.child('bids').child(id).set(bid);
+  db.child('bids').child(id).set(dbBid);
   const bidSize = store.getState().items.get(itemId).get('bids').size;
   db.child('items').child(itemId).child('bids').update({ [bidSize]: id });
 
-  return { type: NEW_BID, ...bid };
+  return { type: NEW_BID, createdAt, expiresAt, ...bid };
 }
 
 export const itemSold = (itemId, bidId) => ({

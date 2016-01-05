@@ -3,8 +3,8 @@
   "block": [1, 2],
   "bids": {
     "x": {
-      "createdAt": "moment()",
-      "expiresAt": "moment().add(2, 'hours')",
+      "createdAt": "2016-01-05T13:49:40-06:00",
+      "expiresAt": "2016-01-05T15:49:40-06:00",
       "amount": 100,
       "bidderName": "Steve",
       "bidId": "x",
@@ -12,8 +12,8 @@
       "itemId": "x"
     },
     "0": {
-      "createdAt": "moment()",
-      "expiresAt": "moment().add(2, 'hours')",
+      "createdAt": "2016-01-05T13:49:40-06:00",
+      "expiresAt": "2016-01-05T15:49:40-06:00",
       "amount": 100,
       "bidderName": "Steve",
       "bidId": 0,
@@ -21,8 +21,8 @@
       "itemId": 1
     },
     "1": {
-      "createdAt": "moment()",
-      "expiresAt": "moment().add(2, 'hours')",
+      "createdAt": "2016-01-05T13:49:40-06:00",
+      "expiresAt": "2016-01-05T15:49:40-06:00",
       "amount": 200,
       "bidderName": "Bill",
       "bidId": 1,
