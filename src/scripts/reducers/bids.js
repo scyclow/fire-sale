@@ -6,7 +6,6 @@ import { NEW_BID, NEW_BIDTIME, SET_STATE } from '../actions';
 
 import hydrateMap from '../utils/hydrateMap';
 
-// TODO remap bids into "all" object
 const initialState = Map({});
 
 const reducer = handleActions({

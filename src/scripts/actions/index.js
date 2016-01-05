@@ -16,10 +16,10 @@ export const resizeWindow = (width) => ({
   width
 });
 
-export const newBidTime = (hours) => {
+export const newBidTime = (ms) => {
   return {
     type: NEW_BIDTIME,
-    hours
+    ms
   };
 };
 

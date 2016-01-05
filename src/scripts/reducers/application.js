@@ -14,9 +14,9 @@ const reducer = handleActions({
   }),
 
 
-  [NEW_BIDTIME]: (state, { hours }) => ({
+  [NEW_BIDTIME]: (state, { ms }) => ({
     ...state,
-    currentBidTime: hours
+    currentBidTime: ms
   })
 
 }, initialState);

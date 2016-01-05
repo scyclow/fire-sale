@@ -11,12 +11,13 @@ import { history, routes } from './routes';
 import api from './api/db';
 const { hydrate } = api; // why the fuck do i need to do this?
 
-import resizeWindow from './utils/resizeWindow';
-
+import resizeWindow from './services/resizeWindow';
+import updateBidTime from './services/updateBidTime';
 
 syncReduxAndRouter(history, store);
-resizeWindow(store.dispatch);
 
+resizeWindow(store.dispatch);
+updateBidTime(store.dispatch);
 hydrate(store.dispatch);
 
 render(
