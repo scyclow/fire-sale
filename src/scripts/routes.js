@@ -5,10 +5,10 @@ import { createHistory } from 'history';
 import mobilize from './utils/MobilizeComponent';
 
 import App from './containers/App';
+import Summary from './containers/Summary';
 import ItemNav from './containers/ItemNav';
 import ItemSummary from './containers/ItemSummary';
 
-const Summary = () => <div>summary</div>
 const FuckOff = () => <div>Fuck off. This aint no route</div>
 
 const history = createHistory();

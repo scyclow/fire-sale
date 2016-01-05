@@ -5,7 +5,7 @@ const select = (state, props) => {
   const items = state.items;
   const itemId = props.params.id;
 
-  return { item: items.get(itemId.toString()).toJS() };
+  return { item: items.get(itemId).toJS() };
 };
 
 class ItemSummary extends Component {

@@ -1,6 +1,16 @@
 {
+  "currentBidTime": 1,
+  "block": ["1", "2"],
   "bids": {
-    "currentBidTime": 1,
+    "x": {
+      "createdAt": "moment()",
+      "expiresAt": "moment().add(2, 'hours')",
+      "amount": "100",
+      "bidderName": "Steve",
+      "bidId": "x",
+      "comment": "this thing fuckn rocks",
+      "itemId": "x"
+    },
     "0": {
       "createdAt": "moment()",
       "expiresAt": "moment().add(2, 'hours')",
@@ -8,20 +18,28 @@
       "bidderName": "Steve",
       "bidId": "0",
       "comment": "this thing fuckn rocks",
-      "itemId": "4"
+      "itemId": "1"
     },
-    "0": {
+    "1": {
       "createdAt": "moment()",
       "expiresAt": "moment().add(2, 'hours')",
       "amount": 200,
       "bidderName": "Bill",
       "bidId": "1",
       "comment": "this thing fuckn rocks",
-      "itemId": "3"
+      "itemId": "2"
     }
   },
   "items": {
-    "block": ["1", "2"],
+    "x": {
+      "name": "bed",
+      "id": "1",
+      "notes": "pickup on 1/14",
+      "imgUrl": "http://sdfgsrg.com",
+      "bids": ["0"],
+      "minBid": 20,
+      "soldId": null
+    },
     "1": {
       "name": "bed",
       "id": "1",

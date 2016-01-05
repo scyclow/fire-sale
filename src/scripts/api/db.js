@@ -12,4 +12,4 @@ const hydrate = (dispatch) => {
   });
 };
 
-export default { hydrate };
+export default { db, hydrate };

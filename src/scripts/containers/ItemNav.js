@@ -6,7 +6,7 @@ import _ from 'lodash';
 import ItemCard from '../components/ItemCard';
 
 const select = (state) => {
-  let items = state.items.toJS();
+  let items = state.items.size && state.items.toJS();
 
   return { items };
 };
@@ -17,7 +17,7 @@ class ItemNav extends React.Component {
 
     return (
       <div>
-        {_.values(items).map(item =>
+        {items && _.values(items).map(item =>
           <ItemCard key={item.id} id={item.id} name={item.name} />
         )}
       </div>
