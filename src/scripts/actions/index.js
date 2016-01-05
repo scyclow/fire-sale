@@ -16,14 +16,12 @@ export const resizeWindow = (width) => ({
   width
 });
 
-// export const newBidtime = (hours) => {
-//   db.update({ bids: { currentBidTime: hours }});
-
-//   return {
-//     type: NEW_BIDTIME,
-//     hours
-//   };
-// };
+export const newBidTime = (hours) => {
+  return {
+    type: NEW_BIDTIME,
+    hours
+  };
+};
 
 const biddingState = () => store.getState().bids
 const newBidId = () => biddingState().size;

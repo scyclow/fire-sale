@@ -28,7 +28,7 @@ render(
 );
 
 ///// FOR TESTING PURPOSES ONLY
-import {newBid, /*newBidTime, */itemSold} from './actions';
+import {newBid, newBidTime, itemSold} from './actions';
 window.newBid = (...args) => store.dispatch(newBid(...args))
-// window.newBidTime = (...args) => store.dispatch(newBidTime(...args))
+window.newBidTime = (...args) => store.dispatch(newBidTime(...args))
 window.store = store

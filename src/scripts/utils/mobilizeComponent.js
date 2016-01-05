@@ -2,8 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 let connector = connect((state) => {
-  const mobileWidth = 500;
-  const isMobile = state.windowSize.width < mobileWidth;
+  const { isMobile } = state.application;
 
   return { isMobile };
 });

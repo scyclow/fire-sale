@@ -8,8 +8,7 @@ import ScreenSplit from '../components/ScreenSplit';
 require('../../styles/application.scss');
 
 const select = (state) => {
-  const mobileWidth = 500;
-  const isMobile = state.windowSize.width < mobileWidth;
+  const { isMobile } = state.application;
 
   return { isMobile };
 };

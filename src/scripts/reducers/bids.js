@@ -16,9 +16,6 @@ const reducer = handleActions({
       Map({ amount, bidderName, bidId, comment, itemId, createdAt, expiresAt })
     ),
 
-  // [NEW_BIDTIME]: (state, { hours }) =>
-  //   state.set('currentBidTime', hours),
-
   [SET_STATE]: (state, { dbState }) => {
     return hydrateMap(dbState.bids, ['createdAt', 'expiresAt'])
   }

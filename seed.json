@@ -1,6 +1,5 @@
 {
-  "currentBidTime": 1,
-  "block": [1, 2],
+  "application": {},
   "bids": {
     "x": {
       "createdAt": "2016-01-05T13:49:40-06:00",
