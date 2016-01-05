@@ -37,13 +37,11 @@ export const newBid = ({ amount, bidderName, itemId, comment }) => {
   /*
     TODO:
       - send dehydrated object to db
-        - remove type, and use moment string
+        - use moment string
       - handle moment rehydration
-      - update item.bids array -- something is fucked up with firebase
   */
   const id = newBidId();
   const bid = {
-    type: NEW_BID,
     // createdAt: moment(),
     // expiresAt: getExpiration(),
     amount,
@@ -53,10 +51,12 @@ export const newBid = ({ amount, bidderName, itemId, comment }) => {
     itemId: itemId
   };
 
+  // update database shit. this sucks. FIXME ?
   db.child('bids').child(id).set(bid);
-  // db.child('items').child(itemId).child('bids').push(id);
+  const bidSize = store.getState().items.get(itemId).get('bids').size;
+  db.child('items').child(itemId).child('bids').update({ [bidSize]: id });
 
-  return bid;
+  return { type: NEW_BID, ...bid };
 }
 
 export const itemSold = (itemId, bidId) => ({

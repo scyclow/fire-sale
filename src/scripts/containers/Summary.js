@@ -20,8 +20,8 @@ class Summary extends Component {
     return (
       <div>
         {bids && _.values(bids).map(bid => (
-          <div>
-            Bid: {bid.bidId} -- Item: {bid.item && bid.item.name}
+          <div key={bid.bidId}>
+            Bid: {bid.bidId} -- Amount: {bid.amount} -- Comment: {bid.comment} -- Item: {bid.item && bid.item.name}
           </div>
         ))}
       </div>

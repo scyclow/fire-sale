@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import _ from 'lodash';
 
 const select = (state, props) => {
-  const items = state.items;
-  const itemId = props.params.id;
+  const items = state.items.size && state.items;
+  const itemId = Number(props.params.id);
 
-  return { item: items.get(itemId).toJS() };
+  if (items) {
+    const item = items.get(itemId).update(
+      'bids',
+      (bids) => bids.map(bidId => state.bids.get(bidId).toJS())
+    ).toJS();
+
+    return { item };
+  }
 };
 
 class ItemSummary extends Component {
@@ -15,6 +23,11 @@ class ItemSummary extends Component {
     return (
       <div>
         {item.name}
+        {_.values(item.bids).map(bid => (
+          <div key={bid.bidId}>
+            Bid: {bid.bidId} -- Amount: {bid.amount} -- Comment: {bid.comment}
+          </div>
+        ))}
       </div>
     );
   }

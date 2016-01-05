@@ -1,11 +1,11 @@
 {
   "currentBidTime": 1,
-  "block": ["1", "2"],
+  "block": [1, 2],
   "bids": {
     "x": {
       "createdAt": "moment()",
       "expiresAt": "moment().add(2, 'hours')",
-      "amount": "100",
+      "amount": 100,
       "bidderName": "Steve",
       "bidId": "x",
       "comment": "this thing fuckn rocks",
@@ -14,47 +14,47 @@
     "0": {
       "createdAt": "moment()",
       "expiresAt": "moment().add(2, 'hours')",
-      "amount": "100",
+      "amount": 100,
       "bidderName": "Steve",
-      "bidId": "0",
+      "bidId": 0,
       "comment": "this thing fuckn rocks",
-      "itemId": "1"
+      "itemId": 1
     },
     "1": {
       "createdAt": "moment()",
       "expiresAt": "moment().add(2, 'hours')",
       "amount": 200,
       "bidderName": "Bill",
-      "bidId": "1",
+      "bidId": 1,
       "comment": "this thing fuckn rocks",
-      "itemId": "2"
+      "itemId": 2
     }
   },
   "items": {
     "x": {
       "name": "bed",
-      "id": "1",
+      "id": 1,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": ["0"],
+      "bids": [0],
       "minBid": 20,
       "soldId": null
     },
     "1": {
       "name": "bed",
-      "id": "1",
+      "id": 1,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": ["0"],
+      "bids": [0],
       "minBid": 20,
       "soldId": null
     },
     "2": {
       "name": "couch",
-      "id": "2",
+      "id": 2,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": ["1"],
+      "bids": [1],
       "minBid": 20,
       "soldId": null
     }
