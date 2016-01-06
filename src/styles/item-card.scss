@@ -1,0 +1,11 @@
+@import './reset';
+@import 'bourbon';
+@import 'neat';
+
+@import 'base/base';
+
+.item-card {
+  border: 1px solid black;
+  padding: 10%;
+  font-size: 2em;
+}

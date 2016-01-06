@@ -1,19 +1,22 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
+
+require('../../styles/item-card.scss');
 
 class ItemCard extends Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired
-  }
-
   render() {
-    const { name, id } = this.props;
+    const { item, Link } = this.props;
+    const { id, name, bids } = item;
+
+    const bestOffer = _(bids).pluck('amount').max();
 
     return (
-      <div>
-        <Link to={`/items/${id}`}>{name}</Link>
-      </div>
+      <Link to={`/items/${id}`}>
+        <div className="item-card">
+          {name + ' >'}
+          <br/>
+          BEST OFFER: ${bestOffer}
+        </div>
+      </Link>
     );
   }
 }

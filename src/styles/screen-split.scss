@@ -1,0 +1,24 @@
+@import './reset';
+@import 'bourbon';
+@import 'neat';
+
+@import 'base/base';
+
+.screen-split.show-nav {
+  $navigator-width: 30%;
+
+  .split-navigator, .split-content {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .split-navigator {
+    border-right: 1px solid black;
+    width: $navigator-width;
+    height: 100%;
+  }
+
+  .split-content {
+    width: 100% - $navigator-width;
+  }
+}
