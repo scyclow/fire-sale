@@ -1,0 +1,37 @@
+@import './reset';
+@import 'bourbon';
+@import 'neat';
+
+@import 'base/base';
+
+.nav-filler, .nav-bar {
+  height: $nav-bar-height;
+  background-color: $black;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  color: $white;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .nav-links {
+    float: right;
+
+    a {
+      color: $white;
+      padding: 20px; // FIXME
+      transition: 0.25s;
+
+      &:hover {
+        color: $black;
+        background-color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}

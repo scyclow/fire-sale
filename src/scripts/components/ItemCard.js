@@ -10,7 +10,7 @@ class ItemCard extends Component {
     const bestOffer = _(bids).pluck('amount').max();
 
     return (
-      <Link to={`/items/${id}`}>
+      <Link to={`/items/${id}`} className="item-link">
         <div className="item-card">
           {name + ' >'}
           <br/>

@@ -4,21 +4,29 @@
 
 @import 'base/base';
 
-.screen-split.show-nav {
-  $navigator-width: 30%;
+.screen-split {
+  @include calc(height, "100% - #{$nav-bar-height}");
 
   .split-navigator, .split-content {
-    display: inline-block;
-    vertical-align: top;
+    overflow: scroll
   }
 
-  .split-navigator {
-    border-right: 1px solid black;
-    width: $navigator-width;
-    height: 100%;
-  }
+  &.show-nav {
+    $navigator-width: 30%;
 
-  .split-content {
-    width: 100% - $navigator-width;
+    .split-navigator, .split-content {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .split-navigator {
+      border-right: 1px solid black;
+      width: $navigator-width;
+      height: 100%;
+    }
+
+    .split-content {
+      width: 100% - $navigator-width;
+    }
   }
 }

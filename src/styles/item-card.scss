@@ -4,8 +4,21 @@
 
 @import 'base/base';
 
+.item-link {
+  &:hover, &:active, &:focus, &:visited {
+    text-decoration: none;
+  }
+}
+
 .item-card {
   border: 1px solid black;
   padding: 10%;
   font-size: 2em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+    transition: 0.25s;
+  }
 }
