@@ -5,16 +5,14 @@ require('../../styles/item-card.scss');
 class ItemCard extends Component {
   render() {
     const { item, Link } = this.props;
-    const { id, name, bids } = item;
-
-    const bestOffer = _(bids).pluck('amount').max();
+    const { id, name, bids, bestOffer } = item;
 
     return (
       <Link to={`/items/${id}`} className="item-link">
         <div className="item-card">
           {name + ' >'}
           <br/>
-          BEST OFFER: ${bestOffer}
+          BEST OFFER: ${bestOffer.amount}
         </div>
       </Link>
     );

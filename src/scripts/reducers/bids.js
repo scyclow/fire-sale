@@ -16,7 +16,9 @@ const reducer = handleActions({
     ),
 
   [SET_STATE]: (state, { dbState }) => {
-    return hydrateMap(dbState.bids, ['createdAt', 'expiresAt'])
+    return hydrateMap(
+      dbState.bids, { moments: ['createdAt', 'expiresAt'] }
+    );
   }
 }, initialState);
 

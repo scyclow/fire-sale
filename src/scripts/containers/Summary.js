@@ -7,8 +7,7 @@ const select = (state) => {
     state.bids.map(bid => bid.set(
       'item',
       state.items.get( bid.get('itemId') )
-    )
-  ).toJS();
+    )).toJS();
 
   return { bids };
 };

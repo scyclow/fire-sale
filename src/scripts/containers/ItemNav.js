@@ -4,15 +4,13 @@ import { connect } from 'react-redux';
 import _ from 'lodash';
 
 import ItemCard from '../components/ItemCard';
+import pojo from '../utils/pojo';
 
 const select = (state) => {
   let items;
 
   if (state.items.size) {
-    items = _.map(state.items.toJS(), (item) => ({
-      ...item,
-      bids: item.bids.map(bidId => state.bids.get(bidId).toJS())
-    }));
+    items = _.map(state.items.toJS(), pojo(state).item)
   }
 
   return { items };

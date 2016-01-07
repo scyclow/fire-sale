@@ -4,18 +4,14 @@ import _ from 'lodash';
 
 import BidForm from '../components/BidForm';
 import { newBid } from '../actions';
+import pojo from '../utils/pojo';
 
 const select = (state, props) => {
   const items = state.items.size && state.items;
   const itemId = Number(props.params.id);
 
   if (items) {
-    const item = items.get(itemId).update(
-      'bids',
-      (bids) => bids.map(bidId => state.bids.get(bidId).toJS())
-    ).toJS();
-
-    return { item };
+    return { item: pojo(state).item(items.get(itemId)) };
   }
 };
 
