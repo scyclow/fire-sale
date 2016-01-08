@@ -9,11 +9,12 @@ import hydrateMap from '../utils/hydrateMap';
 let initialState = Map({});
 
 const reducer = handleActions({
-  [NEW_BID]: (state, { bidId, itemId }) =>
-    state.updateIn(
-      [itemId, 'bids'],
-      (bids) => bids.push(bidId)
-    ),
+  // FIXME -- This is getting updated in firebase too, so it's counting twice
+  // [NEW_BID]: (state, { bidId, itemId }) =>
+  //   state.updateIn(
+  //     [itemId, 'bids'],
+  //     (bids) => bids.push(bidId)
+  //   ),
 
   [ITEM_SOLD]: (state, { bidId, itemId }) =>
     state.setIn([itemId, 'soldId'], bidId),

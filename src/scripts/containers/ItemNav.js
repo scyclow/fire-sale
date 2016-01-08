@@ -8,7 +8,7 @@ import pojo from '../utils/pojo';
 
 const select = (state) => {
   let items;
-
+// TODO if item has already expired, create a seperate array
   if (state.items.size) {
     items = _.map(state.items.toJS(), pojo(state).item)
   }

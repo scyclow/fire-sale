@@ -17,12 +17,12 @@
     .split-navigator, .split-content {
       display: inline-block;
       vertical-align: top;
+      height: 100%;
     }
 
     .split-navigator {
       border-right: 1px solid black;
       width: $navigator-width;
-      height: 100%;
     }
 
     .split-content {

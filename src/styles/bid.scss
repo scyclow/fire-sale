@@ -1,0 +1,23 @@
+@import './reset';
+@import 'bourbon';
+@import 'neat';
+
+@import 'base/base';
+
+.bid-summary {
+  padding: 10%;
+  padding-top: 5%;
+
+  .bid {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .bidder-name {
+    text-decoration: underline;
+  }
+
+  .bid-comment {
+    font-style: italic;
+  }
+}

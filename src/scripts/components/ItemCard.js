@@ -12,7 +12,10 @@ class ItemCard extends Component {
         <div className="item-card">
           {name + ' >'}
           <br/>
-          BEST OFFER: ${bestOffer.amount}
+          {bestOffer ?
+            `BEST OFFER: $${bestOffer.amount}` :
+            'NO OFFERS'
+          }
         </div>
       </Link>
     );

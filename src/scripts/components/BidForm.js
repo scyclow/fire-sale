@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+require('../../styles/bid-form.scss');
+
 
 class BidForm extends Component {
   state = { error: '', confirmation: '' }
@@ -36,11 +38,11 @@ class BidForm extends Component {
     const { error, confirmation } = this.state;
 
     return (
-      <div onKeyPress={this._onKeyPress}>
+      <div className="bid-form" onKeyPress={this._onKeyPress}>
         <div className="flash">{error || confirmation}</div>
-        <input ref="bidderName" type="text" placeholder="Your Name" />
-        <input ref="amount" type="text" placeholder="Bid $$$" />
-        <input ref="comment" type="text" placeholder="Comment" />
+        <input className="bid-input" ref="bidderName" type="text" placeholder="Your Name" />
+        <input className="bid-input" ref="amount" type="text" placeholder="Bid $$$" />
+        <input className="bid-input" ref="comment" type="text" placeholder="Comment" />
         <button onClick={this._createBid}>Bid Now!</button>
       </div>
     );

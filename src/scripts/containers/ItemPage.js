@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 
-import BidForm from '../components/BidForm';
 import { newBid } from '../actions';
 import pojo from '../utils/pojo';
+import ItemSummary from '../components/ItemSummary';
 
 const select = (state, props) => {
   const items = state.items.size && state.items;
@@ -15,22 +15,16 @@ const select = (state, props) => {
   }
 };
 
-class ItemSummary extends Component {
+class ItemPage extends Component {
   render() {
     const { dispatch, item } = this.props;
 
+    const dispatchBid = (...args) => dispatch(newBid(...args));
+
     return (
-      <div>
-        {item.name}
-        <BidForm item={item} onSubmit={(...args) => dispatch(newBid(...args))} />
-        {_.values(item.bids).map(bid => (
-          <div key={bid.bidId}>
-            Bid: {bid.bidId} -- Amount: {bid.amount} -- Comment: {bid.comment}
-          </div>
-        ))}
-      </div>
+      <ItemSummary item={item} dispatchBid={dispatchBid} />
     );
   }
 }
 
-export default connect(select)(ItemSummary);
+export default connect(select)(ItemPage);

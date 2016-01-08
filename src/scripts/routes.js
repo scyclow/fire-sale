@@ -7,7 +7,7 @@ import mobilize from './utils/MobilizeComponent';
 import App from './containers/App';
 import Summary from './containers/Summary';
 import ItemNav from './containers/ItemNav';
-import ItemSummary from './containers/ItemSummary';
+import ItemPage from './containers/ItemPage';
 
 const FuckOff = () => <div>Fuck off. This aint no route</div>
 
@@ -23,7 +23,7 @@ const routes = (
     <Route path="/" component={App}>
       <IndexRoute component={MobilizedComponent} />
       <Route path="summary" component={Summary} />
-      <Route path="items/:id" component={ItemSummary} />
+      <Route path="items/:id" component={ItemPage} />
       <Route path="*" component={FuckOff} />
     </Route>
   </Router>

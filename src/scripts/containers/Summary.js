@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import BidSummary from '../components/BidSummary';
 
 const select = (state) => {
   const bids = state.bids.size &&
@@ -17,13 +18,7 @@ class Summary extends Component {
     const { bids } = this.props;
 
     return (
-      <div>
-        {bids && _.values(bids).map(bid => (
-          <div key={bid.bidId}>
-            Bid: {bid.bidId} -- Amount: {bid.amount} -- Comment: {bid.comment} -- Item: {bid.item && bid.item.name}
-          </div>
-        ))}
-      </div>
+      <BidSummary bids={_.values(bids)}/>
     );
   }
 }

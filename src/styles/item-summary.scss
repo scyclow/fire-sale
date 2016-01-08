@@ -1,0 +1,44 @@
+@import './reset';
+@import 'bourbon';
+@import 'neat';
+
+@import 'base/base';
+
+.item-summary {
+  padding: 10%;
+  padding-top: 5%;
+
+  .item-name {
+    font-size: 3em;
+    text-transform: capitalize;
+  }
+
+  .item-notes, .item-expiration {
+    font-size: 1.5em;
+    font-style: italic;
+  }
+
+  .item-description, .bid-form {
+    margin-bottom: 1em;
+  }
+
+  .empty-bid {
+    font-style: italic;
+  }
+
+  .item-bid, .empty-bid {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .best-offer {
+    font-size: 2em;
+    text-decoration: bold;
+    border: 3px dashed red;
+    padding: 5px;
+  }
+
+  .bid-comment {
+    font-style: italic;
+  }
+}
