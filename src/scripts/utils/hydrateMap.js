@@ -2,12 +2,17 @@ import { Map, fromJS } from 'immutable';
 import moment from 'moment';
 import _ from 'lodash';
 
-const hydrateMap = (collection, { moments=[] }={}) =>  {
+const hydrateMap = (collection, { moments=[], arrays=[] }={}) =>  {
 
   const hydrateMember = (value) => {
     let member = fromJS(value);
     _.each(moments, (m) => {
       member = member.update(m, (str) => moment(str))
+    });
+
+    _.each(arrays, (a) => {
+      let property = member.get(a);
+      member = member.set(a, property || []);
     });
 
     return member;

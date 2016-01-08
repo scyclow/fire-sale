@@ -20,7 +20,7 @@ const reducer = handleActions({
     state.setIn([itemId, 'soldId'], bidId),
 
   [SET_STATE]: (state, { dbState }) =>
-    hydrateMap(dbState.items)
+    hydrateMap(dbState.items, { arrays: ['bids'] })
 
 }, initialState);
 
