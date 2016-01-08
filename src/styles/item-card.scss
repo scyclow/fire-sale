@@ -16,6 +16,11 @@
   font-size: 2em;
   text-transform: uppercase;
 
+  &.sold {
+    background-color: #444444;
+    color: #000000;
+  }
+
   &:hover {
     color: #FFFFFF;
     background-color: #000000;

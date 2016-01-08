@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import moment from 'moment';
+
 require('../../styles/item-summary.scss');
 
 import BidForm from './BidForm';
@@ -9,7 +11,7 @@ const ItemBid = ({ bid, classname='' }) => (
     <span className="bid-info">{bid.bidderName} offered ${bid.amount}</span>
     <span className="bid-comment">{bid.comment && `: "${bid.comment}"`}</span>
   </div>
-)
+);
 
 class ItemSummary extends Component {
   render() {
@@ -24,6 +26,11 @@ class ItemSummary extends Component {
       </div>
     );
 
+    const alreadySold = (
+      item.bestOffer &&
+      moment().diff(item.bestOffer.expiresAt) > 0
+    );
+
     return (
       <div className="item-summary">
         <div className="item-description">
@@ -31,13 +38,17 @@ class ItemSummary extends Component {
           <div className="item-notes">{item.notes}</div>
         </div>
 
-        <BidForm
-          item={item}
-          onSubmit={dispatchBid}
-        />
+        {
+          alreadySold ?
+            <div>already sold!</div> :
+            <BidForm item={item} onSubmit={dispatchBid}/>
+        }
 
         <div className="item-expiration">
-          {item.bestOffer && `EXPIRES AT: ${item.bestOffer.expiresAt.format('HH:mm:ss')}`}
+          {
+            item.bestOffer &&
+            `${alreadySold ? 'EXPIRED' : 'EXPIRES'} AT: ${item.bestOffer.expiresAt.format('HH:mm:ss')}`
+          }
         </div>
 
         {bids.length ? bestOffer : noOffer}

@@ -8,7 +8,11 @@ class BidForm extends Component {
   _createBid = () => {
     const amount = Number(this.refs.amount.value);
     const bidderName = this.refs.bidderName.value;
-    const comment = this.refs.comment.value;
+    const comment = this.refs.comment.value || _.sample([
+      'What a great deal!',
+      'Steve\'s so cool! What a guy!',
+
+    ]);
 
     if (!bidderName) {
       this.setState({ error: 'Enter your name' });
@@ -16,6 +20,7 @@ class BidForm extends Component {
       this.setState({ error: 'Enter a valid amount' });
     } else {
       const itemId = this.props.item.id;
+
       this.props.onSubmit({ amount, bidderName, comment, itemId });
       this._clearInputs();
       this.setState({ error: '', confirmation: 'Groovy' });

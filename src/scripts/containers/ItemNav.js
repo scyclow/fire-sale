@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import _ from 'lodash';
+import moment from 'moment';
 
 import ItemCard from '../components/ItemCard';
 import pojo from '../utils/pojo';
+
+const itemSold = (item) => moment().diff(item.bestOffer.expiresAt) > 0;
 
 const select = (state) => {
   let items;
@@ -19,12 +22,22 @@ const select = (state) => {
 class ItemNav extends React.Component {
   render() {
     const { items } = this.props;
+    let [sold, notSold] = items ? _.partition(items, itemSold) : [[],[]];
 
     return (
       <div>
-        {items && items.map(item =>
-          <ItemCard key={item.id} item={item} Link={Link}/>
-        )}
+        {
+          notSold &&
+          notSold.map(item =>
+            <ItemCard key={item.id} item={item} Link={Link} />
+          )
+        }
+        {
+          sold &&
+          sold.map(item =>
+            <ItemCard key={item.id} item={item} Link={Link} sold={true}/>
+          )
+        }
       </div>
     );
   }
