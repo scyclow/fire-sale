@@ -27,8 +27,8 @@ const biddingState = () => store.getState().bids
 const newBidId = () => biddingState().size;
 const getExpiration = () => {
   let now = moment();
-  let timeLeft = biddingState().get('currentBidTime');
-  return now.add(timeLeft, 'hours');
+  let timeLeft = store.getState().application.currentBidTime;
+  return now.add(timeLeft, 'milliseconds');
 }
 
 export const newBid = ({ amount, bidderName, itemId, comment }) => {
