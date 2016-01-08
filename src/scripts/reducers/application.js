@@ -5,14 +5,14 @@ const mobileWidth = 640;
 
 const initialState = {
   isMobile: window.innerWidth < mobileWidth,
-  windowWidth: window.innerWidth
+  screenWidth: window.innerWidth
 };
 
 const reducer = handleActions({
   [RESIZE_WINDOW]: (state, action) => ({
     ...state,
     isMobile: action.width < mobileWidth,
-    windowWidth: action.width
+    screenWidth: action.width
   }),
 
 

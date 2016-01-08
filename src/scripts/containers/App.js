@@ -9,31 +9,25 @@ import NavBar from '../components/NavBar';
 require('../../styles/application.scss');
 
 const select = (state) => {
-  const { isMobile } = state.application;
+  const { isMobile, screenWidth } = state.application;
 
-  return { isMobile };
+  return { isMobile, screenWidth };
 };
 
 class App extends React.Component {
   render() {
-    const { children, isMobile } = this.props;
-
-    const mobileNav = (
-      <NavBar>
-        <Link to="/">View Items</Link>
-        <Link to="/summary">All Bids</Link>
-      </NavBar>
-    );
-
-    const desktopNav = (
-      <NavBar>
-        <Link to="/">All Bids</Link>
-      </NavBar>
-    )
+    const { children, isMobile, screenWidth } = this.props;
+    const linkWidth = {width: (isMobile ? '50%' : '100%')};
 
     return (
       <div>
-        {isMobile ? mobileNav : desktopNav}
+        <NavBar screenWidth={screenWidth}>
+          <Link to="/" style={linkWidth}>BUY MY CRAP</Link>
+          {
+            isMobile &&
+            <Link to="/summary" style={linkWidth}>All Bids</Link>
+          }
+        </NavBar>
         <ScreenSplit showNavigator={!isMobile}>
           <ItemNav />
           <div>{children}</div>

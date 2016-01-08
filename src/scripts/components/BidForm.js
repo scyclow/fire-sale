@@ -23,7 +23,7 @@ class BidForm extends Component {
   }
 
   _clearInputs = () => {
-    ['bidderName', 'amount', 'comment'].forEach(ref => {
+    ['bidderName', 'amount', 'comment', 'flash'].forEach(ref => {
       this.refs[ref].value = ''
     });
   }
@@ -39,7 +39,9 @@ class BidForm extends Component {
 
     return (
       <div className="bid-form" onKeyPress={this._onKeyPress}>
-        <div className="flash">{error || confirmation}</div>
+        <div className={error ? 'error' : 'confirmation'} ref="flash">
+          {error || confirmation}
+        </div>
         <input className="bid-input" ref="bidderName" type="text" placeholder="Your Name" />
         <input className="bid-input" ref="amount" type="text" placeholder="Bid $$$" />
         <input className="bid-input" ref="comment" type="text" placeholder="Comment" />
