@@ -39,15 +39,14 @@ class ItemSummary extends Component {
         </div>
 
         {
-          alreadySold ?
-            <div>already sold!</div> :
-            <BidForm item={item} onSubmit={dispatchBid}/>
+          !alreadySold &&
+          <BidForm key={item.id} item={item} onSubmit={dispatchBid}/>
         }
 
         <div className="item-expiration">
           {
             item.bestOffer &&
-            `${alreadySold ? 'EXPIRED' : 'EXPIRES'} AT: ${item.bestOffer.expiresAt.format('HH:mm:ss')}`
+            `${alreadySold ? 'SOLD' : 'EXPIRES'} AT: ${item.bestOffer.expiresAt.format('HH:mm:ss')}`
           }
         </div>
 

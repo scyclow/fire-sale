@@ -3,7 +3,7 @@
   "bids": {
     "x": {
       "createdAt": "2016-01-05T13:49:40-06:00",
-      "expiresAt": "2016-01-05T15:49:40-06:00",
+      "expiresAt": "2016-01-09T15:49:40-06:00",
       "amount": 100,
       "bidderName": "Steve",
       "bidId": "x",
@@ -12,7 +12,7 @@
     },
     "0": {
       "createdAt": "2016-01-05T13:49:40-06:00",
-      "expiresAt": "2016-01-05T15:49:40-06:00",
+      "expiresAt": "2016-01-07T15:49:40-06:00",
       "amount": 100,
       "bidderName": "Steve",
       "bidId": 0,
@@ -21,7 +21,7 @@
     },
     "1": {
       "createdAt": "2016-01-05T13:49:40-06:00",
-      "expiresAt": "2016-01-05T15:49:40-06:00",
+      "expiresAt": "2016-01-09T15:49:40-06:00",
       "amount": 200,
       "bidderName": "Bill",
       "bidId": 1,
@@ -58,92 +58,92 @@
       "soldId": null
     },
     "3": {
-      "name": "bed",
+      "name": "table",
       "id": 3,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "4": {
-      "name": "couch",
+      "name": "bleh",
       "id": 4,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "5": {
-      "name": "bed",
+      "name": "scisors",
       "id": 5,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "6": {
-      "name": "couch",
+      "name": "hat",
       "id": 6,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "7": {
-      "name": "bed",
+      "name": "bong",
       "id": 7,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "8": {
-      "name": "couch",
+      "name": "machete",
       "id": 8,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "9": {
-      "name": "bed",
+      "name": "speakers",
       "id": 9,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "10": {
-      "name": "couch",
+      "name": "thing",
       "id": 10,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "11": {
-      "name": "bed",
+      "name": "idunno",
       "id": 11,
       "notes": "pickup on 1/14",
       "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     },
     "12": {
-      "name": "couch",
+      "name": "more crap",
       "id": 12,
       "notes": "seen lots of 'action', if ya know what i mean.",
       "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
+      "bids": [],
       "minBid": 20,
       "soldId": null
     }
