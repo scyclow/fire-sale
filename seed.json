@@ -22,285 +22,298 @@
       "soldId": null
     },
     "1": {
-      "name": "Bed/boxspring/frame - pickup 1/14",
+      "name": "Bed",
       "id": 1,
-      "notes": "something",
+      "notes": "Comes with box spring, metal legs. Pick up would be on 1/14 AM.",
       "bids": []
     },
     "2": {
-      "name": "rug",
+      "name": "Rug",
       "id": 2,
-      "notes": "something",
+      "notes": "The best Ikea rug that money could buy",
       "bids": []
     },
     "3": {
-      "name": "polaroid",
+      "name": "Desk",
       "id": 3,
-      "notes": "something",
+      "notes": "The only place you can possibly do work. You don't want to cheap out on this one. Chair sold seperately",
       "bids": []
     },
     "4": {
-      "name": "cofee table",
+      "name": "Desk Chair",
       "id": 4,
-      "notes": "something",
+      "notes": "It's got wheels. It's got arm rests. It's got (possibly fake) leather. What else do you need?",
       "bids": []
     },
     "5": {
-      "name": "moniter",
+      "name": "Cofee Table",
       "id": 5,
-      "notes": "something",
+      "notes": "Damn good coffee (table)",
       "bids": []
     },
     "6": {
-      "name": "speakers/subwoofer",
+      "name": "Computer Monitor",
       "id": 6,
-      "notes": "something",
+      "notes": "I use it mainly to watch movies and TV shows. Sometimes porn.",
       "bids": []
     },
     "7": {
-      "name": "silver lamp",
+      "name": "Speakers",
       "id": 7,
-      "notes": "something",
+      "notes": "The audio jack is a little messed up. Should be cheap to replace. Comes with subwoofer.",
       "bids": []
     },
     "8": {
-      "name": "camping chair",
+      "name": "Silver Lamp",
       "id": 8,
-      "notes": "something",
+      "notes": "The tall silver lamp in the living room. It bends, it sheds light, it has positive chi.",
       "bids": []
     },
     "9": {
-      "name": "white board",
+      "name": "Camping Chair",
       "id": 9,
-      "notes": "something",
+      "notes": "Not very comfortable, but it folds and camps.",
       "bids": []
     },
     "10": {
-      "name": "ball-maze",
+      "name": "$100 Bill",
       "id": 10,
-      "notes": "something",
+      "notes": "Approximate retail value: $100",
       "bids": []
     },
     "11": {
-      "name": "vaporizer",
+      "name": "Toaster",
       "id": 11,
-      "notes": "something",
+      "notes": "There's no better way to toast bread.",
       "bids": []
     },
     "12": {
-      "name": "ikea glass",
+      "name": "Toaster oven",
       "id": 12,
-      "notes": "something",
+      "notes": "Kind of like the toaster, but in oven form.",
       "bids": []
     },
     "13": {
-      "name": "drone",
+      "name": "Microwave",
       "id": 13,
-      "notes": "something",
+      "notes": "Only gives you a little bit of cancer.",
       "bids": []
     },
     "14": {
-      "name": "flexy ball",
+      "name": "Kitchen Garbage",
       "id": 14,
-      "notes": "something",
+      "notes": "This thing is ergonomic as fuck. It'll even make your posture better.",
       "bids": []
     },
     "15": {
-      "name": "halloween lights",
+      "name": "White Board",
       "id": 15,
-      "notes": "something",
+      "notes": "Useful sketching complicated coding diagrams, drawing calanders, and playing tic tac toe.",
       "bids": []
     },
     "16": {
-      "name": "machete",
+      "name": "Ball Maze",
       "id": 16,
-      "notes": "something",
+      "notes": "The awesome spherical ball maze thing. Best $10 I've ever spent at CVS. Limited release.",
       "bids": []
     },
     "17": {
-      "name": "triangle table",
+      "name": "Polaroid Camera",
       "id": 17,
-      "notes": "something",
+      "notes": "I think I paid $15 for it. Does not come with film.",
       "bids": []
     },
     "18": {
-      "name": "shitty speakers",
+      "name": "Vaporizer",
       "id": 18,
-      "notes": "something",
+      "notes": "For smoking tobacco. Needs a new whip, which should be cheap. It otherwise works like a dream",
       "bids": []
     },
     "19": {
-      "name": "desk",
+      "name": "Ikea glass",
       "id": 19,
-      "notes": "something",
+      "notes": "That flowery glass bullshit thing in my living room.",
       "bids": []
     },
     "20": {
-      "name": "desk chair",
+      "name": "Drone",
       "id": 20,
-      "notes": "something",
+      "notes": "It's a little banged up and needs a new battery, but it's a fucking drone. Don't get it stuck in a tree.",
       "bids": []
     },
     "21": {
-      "name": "small book case",
+      "name": "Halloween Lights",
       "id": 21,
-      "notes": "something",
+      "notes": "Are you really going to wait another 10 months for halloween?",
       "bids": []
     },
     "22": {
-      "name": "nerf gun",
+      "name": "Machete",
       "id": 22,
-      "notes": "something",
+      "notes": "It's not very sharp, but you can still fuck someone up with it.",
       "bids": []
     },
     "23": {
-      "name": "iron",
+      "name": "Triangle table",
       "id": 23,
-      "notes": "something",
+      "notes": "Bedside table. Fits anywhere. Holds your shit while you sleep.",
       "bids": []
     },
     "24": {
-      "name": "dust buster",
+      "name": "Small Book Case",
       "id": 24,
-      "notes": "something",
+      "notes": "The smaller, black book case in the bargain room. It holds books like no one's business",
       "bids": []
     },
     "25": {
-      "name": "tiny xmas tree",
+      "name": "Nerf Gun",
       "id": 25,
-      "notes": "something",
+      "notes": "Pop a cap in someone's ass. Batteries/ammo included",
       "bids": []
     },
     "26": {
-      "name": "hallway mirror",
+      "name": "Iron",
       "id": 26,
-      "notes": "something",
+      "notes": "Who likes wrinkly clothes? I sure don't. Fuck that. Buy an iron.",
       "bids": []
     },
     "27": {
-      "name": "plunger/toiltte cleaner",
+      "name": "Dust Buster",
       "id": 27,
-      "notes": "something",
+      "notes": "Dust bust. Charger and dust included",
       "bids": []
     },
     "28": {
-      "name": "$100 bill",
+      "name": "Tiny Xmas tree",
       "id": 28,
-      "notes": "something",
+      "notes": "Christmas sucks. Buy this tree. It sucks slightly less than Christmas.",
       "bids": []
     },
     "29": {
-      "name": "candle",
+      "name": "Brita Filter",
       "id": 29,
-      "notes": "something",
+      "notes": "It's in my fridge. Cleanses all the arsenic that Rahm is putting in the water. Comes with a pack of filters.",
       "bids": []
     },
     "30": {
-      "name": "casio keyboard/charger",
+      "name": "Laundry Detergent",
       "id": 30,
-      "notes": "something",
+      "notes": "Scent-free arm & hammer. The best shit out there. ",
       "bids": []
     },
     "31": {
-      "name": "plastic drawers (3)",
+      "name": "Hallway Mirror",
       "id": 31,
-      "notes": "something",
+      "notes": "Something something steals your soul.",
       "bids": []
     },
     "32": {
-      "name": "tower fan",
+      "name": "Parabolic Mirror",
       "id": 32,
-      "notes": "something",
+      "notes": "It's in rough shape, but what else are you going to use to see around the corner of your parking garage?",
       "bids": []
     },
     "33": {
-      "name": "tiny chair",
+      "name": "Canned Fish Value Pack",
       "id": 33,
-      "notes": "something",
+      "notes": "Probably the best deal here. When the zombie/nuclear apocalypse comes, we're going to be trading canned fish, not currency. Seriously though, think about it. Canned fish has intrinsic value/utility as food. It's portable, durable, homogenous, divisible, and stable.",
       "bids": []
     },
     "34": {
-      "name": "stool",
+      "name": "Spice Value Pack",
       "id": 34,
-      "notes": "something",
+      "notes": "Includes all spices & spice rack.",
       "bids": []
     },
     "35": {
-      "name": "dish drainer (2)",
+      "name": "Glitter Value Pack",
       "id": 35,
-      "notes": "something",
+      "notes": "Some call it \"The Herpes of the craft world.\" Comes with small glitter packs, glitter pens, and glitter spray.",
       "bids": []
     },
     "36": {
-      "name": "spike rack/spices",
+      "name": "Casio keyboard",
       "id": 36,
-      "notes": "something",
+      "notes": "The built-in speakers don't work. You can plug in external speakers, though. Comes with charger",
       "bids": []
     },
     "37": {
-      "name": "glitter pack",
+      "name": "Plastic drawers (3)",
       "id": 37,
-      "notes": "something",
+      "notes": "Those shitty plastic drawers you keep stuff in. If you don't want to buy all three, whatever you don't want will go to next best offer.",
       "bids": []
     },
     "38": {
-      "name": "toaster",
+      "name": "Tower Fan",
       "id": 38,
-      "notes": "something",
+      "notes": "White noise. Keeps you cool at night.",
       "bids": []
     },
     "39": {
-      "name": "toaster oven",
+      "name": "Tiny chair",
       "id": 39,
-      "notes": "something",
+      "notes": "It's so fucking cute, how could you not want it?",
       "bids": []
     },
     "40": {
-      "name": "microwave",
+      "name": "Stool",
       "id": 40,
-      "notes": "something",
+      "notes": "This thing is falling apart, but it still lets me step on it to get to higher places.",
       "bids": []
     },
     "41": {
-      "name": "kitchen garbage",
+      "name": "Shitty Speakers",
       "id": 41,
-      "notes": "something",
+      "notes": "Speakers in the bargain room. I don't know if these actually work.",
       "bids": []
     },
     "42": {
-      "name": "parabolic mirror",
+      "name": "Dish drainer (2)",
       "id": 42,
-      "notes": "something",
+      "notes": "Who needs a dishwasher? Drain dishes the organic way. I got two of them. One's better than the other. ",
       "bids": []
     },
     "43": {
-      "name": "toilette paper",
+      "name": "Plunger & Toilet Cleaner",
       "id": 43,
-      "notes": "something",
+      "notes": "Lightly used.",
       "bids": []
     },
     "44": {
-      "name": "sardine pack",
+      "name": "Toilet paper",
       "id": 44,
-      "notes": "something",
+      "notes": "Enjoy wiping your ass with 2 rolls of Scott. (I prefer to use my hand).",
       "bids": []
     },
+
     "45": {
-      "name": "brita/filter packs",
+      "name": "Deck Furniture",
       "id": 45,
-      "notes": "something",
+      "notes": "I got chairs, spare bike parts, a tub, and some sort of plant. ",
       "bids": []
     },
     "46": {
-      "name": "laundry detergent",
+      "name": "Camelback",
       "id": 46,
-      "notes": "something",
+      "notes": "This thing is pretty old and needs to be steralized. But it can be yours today for the low low price of whatever the next best offer is willing to pay for it!",
       "bids": []
     },
     "47": {
-      "name": "deck furniture",
+      "name": "Nuveen Piggy bank",
       "id": 47,
-      "notes": "something",
+      "notes": "Piggy bank and all the change in it. (I don't actually know how much is inside)",
+      "bids": []
+    },
+    "48": {
+      "name": "Steve's soul",
+      "id": 48,
+      "notes": "I was hopping to at least get $10. Includes certificate of authenticity.",
+      "bids": []
+    },
+    "49": {
+      "name": "Flexy Ball",
+      "id": 49,
+      "notes": "The colorful flexing ball thing that they sell at science museums",
       "bids": []
     }
   }

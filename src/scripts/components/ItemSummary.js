@@ -15,7 +15,11 @@ const ItemBid = ({ bid, classname='' }) => (
 
 class ItemSummary extends Component {
   render() {
-    const { dispatchBid, item } = this.props;
+    const { dispatchBid, item, Link } = this.props;
+
+    if (!item) {
+      return <div>Something is wrong here...</div>
+    }
 
     const bids = _(item.bids).values().sortBy(bid => -bid.amount).value();
 
@@ -26,9 +30,16 @@ class ItemSummary extends Component {
       </div>
     );
 
+    const now = moment();
+
     const alreadySold = (
       item.bestOffer &&
-      moment().diff(item.bestOffer.expiresAt) > 0
+      now.diff(item.bestOffer.expiresAt) > 0
+    );
+
+    const itemReady = (
+      item.bestOffer &&
+      now.diff(moment('2016-01-09T17:59:59-06:00')) > 0
     );
 
     return (
@@ -39,9 +50,16 @@ class ItemSummary extends Component {
         </div>
 
         {
-          !alreadySold &&
+          itemReady && !alreadySold &&
           <BidForm key={item.id} item={item} onSubmit={dispatchBid}/>
         }
+        {
+          !itemReady && !alreadySold &&
+          <div className="empty-bid">
+            Bidding for this item opens at 18:00 on 1/9/16
+          </div>
+        }
+        <Link to="/time-table">When does my bid expire?</Link>
 
         <div className="item-expiration">
           {
@@ -50,7 +68,7 @@ class ItemSummary extends Component {
           }
         </div>
 
-        {bids.length ? bestOffer : noOffer}
+        { itemReady && (bids.length ? bestOffer : noOffer)}
 
         {bids.length > 1 && bids.slice(1).map(bid => (
           <ItemBid bid={bid} />

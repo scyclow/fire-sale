@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router';
 import _ from 'lodash';
 
 import { newBid } from '../actions';
@@ -11,7 +12,8 @@ const select = (state, props) => {
   const itemId = Number(props.params.id);
 
   if (items) {
-    return { item: pojo(state).item(items.get(itemId)) };
+    const item = items.get(itemId);
+    return item && { item: pojo(state).item(item) };
   }
 };
 
@@ -22,7 +24,7 @@ class ItemPage extends Component {
     const dispatchBid = (...args) => dispatch(newBid(...args));
 
     return (
-      <ItemSummary item={item} dispatchBid={dispatchBid} />
+      <ItemSummary item={item} dispatchBid={dispatchBid} Link={Link}/>
     );
   }
 }

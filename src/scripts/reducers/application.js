@@ -5,7 +5,8 @@ const mobileWidth = 640;
 
 const initialState = {
   isMobile: window.innerWidth < mobileWidth,
-  screenWidth: window.innerWidth
+  screenWidth: window.innerWidth,
+  currentBidTime: 0
 };
 
 const reducer = handleActions({

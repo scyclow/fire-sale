@@ -6,6 +6,7 @@ import mobilize from './utils/mobilizeComponent';
 
 import App from './containers/App';
 import Summary from './containers/Summary';
+import TimeTable from './containers/TimeTable';
 import ItemNav from './containers/ItemNav';
 import ItemPage from './containers/ItemPage';
 
@@ -28,6 +29,7 @@ const routes = (
         })
       }/>
       <Route path="summary" component={Summary} />
+      <Route path="time-table" component={TimeTable} />
       <Route path="items/:id" component={ItemPage} />
       <Route path="*" component={ErrorPage} />
     </Route>
