@@ -30,30 +30,36 @@ class TimeTable extends Component {
     let { currentBidTime } = this.props;
     currentBidTime = currentBidTime / (1000 * 60);
 
-    const styles = {
-      fontSize: '1.5em'
-    }
+    const center = { textAlign: 'center' }
 
     return (
-      <div className="time-table" style={styles}>
-        <div>ITEMS ARE SOLD ON EXPIRATION OF BEST OFFER</div>
-        <div>ALL NEW OFFERS EXPIRE IN: {currentBidTime} minutes</div>
+      <div className="time-table" style={{fontSize: '1.5em'}}>
+        <div style={{padding: '1em'}}>
+          <div style={{fontSize: '2em'}}>ALL NEW OFFERS EXPIRE IN: {currentBidTime} minutes</div>
+          <div>If you are confused, see the explanation below...</div>
+        </div>
         <table>
           <thead>
             <tr>
-              <th>Offers made after</th>
-              <th>Expire in __ minutes</th>
+              <th style={center}>Offers made after</th>
+              <th style={center}>Expire in __ minutes</th>
             </tr>
           </thead>
           <tbody>
           {_.map(bidTimes, (bidTime, time) => (
             <tr key={bidTime + time}>
-              <td>{time}</td>
-              <td>{bidTime}</td>
+              <td style={center}>{time}</td>
+              <td style={center}>{bidTime}</td>
             </tr>
           ))}
           </tbody>
         </table>
+        <div style={{padding: '1em'}}>
+          <div style={{fontSize: '2em'}}>EXPLANATION</div>
+          <div>
+            Whenever you bid on an item, Other people will have a specified amount of time to make a better offer. For example, let's say you bid $30 on my coffee table at 22:25 (10:25PM). Your offer would exipire in 30 min (10:55PM). If no one makes a better offer before then, you win the item. However, if someone bids $35 at 22:40, you would have until 23:00 to make a better offer.
+          </div>
+        </div>
       </div>
     );
   }
