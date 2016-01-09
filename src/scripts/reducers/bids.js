@@ -9,10 +9,26 @@ import hydrateMap from '../utils/hydrateMap';
 const initialState = Map({});
 
 const reducer = handleActions({
-  [NEW_BID]: (state, { amount, bidderName, bidId, comment, itemId, createdAt, expiresAt }) =>
+  [NEW_BID]: (state, {
+    amount,
+    bidderName,
+    bidId,
+    comment,
+    itemId,
+    createdAt,
+    expiresAt
+  }) =>
     state.set(
       bidId,
-      Map({ amount, bidderName, bidId, comment, itemId, createdAt, expiresAt })
+      Map({
+        amount,
+        bidderName,
+        bidId,
+        comment,
+        itemId,
+        createdAt,
+        expiresAt
+      })
     ),
 
   [SET_STATE]: (state, { dbState }) => {

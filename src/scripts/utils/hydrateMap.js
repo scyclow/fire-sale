@@ -3,9 +3,10 @@ import moment from 'moment';
 import _ from 'lodash';
 
 const hydrateMap = (collection, { moments=[], arrays=[] }={}) =>  {
-
   const hydrateMember = (value) => {
     let member = fromJS(value);
+
+    // is there a better way to do this?
     _.each(moments, (m) => {
       member = member.update(m, (str) => moment(str))
     });

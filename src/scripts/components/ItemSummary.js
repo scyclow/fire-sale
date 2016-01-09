@@ -22,7 +22,7 @@ class ItemSummary extends Component {
     const bestOffer = <ItemBid bid={bids[0]} classname="best-offer" />;
     const noOffer = (
       <div className="empty-bid">
-        Go ahead. Make me an offer I can't refuse. Or, offer me $0, you cheap ass.
+        Go ahead. Make me an offer I can't refuse.
       </div>
     );
 
@@ -46,7 +46,7 @@ class ItemSummary extends Component {
         <div className="item-expiration">
           {
             item.bestOffer &&
-            `${alreadySold ? 'SOLD' : 'EXPIRES'} AT: ${item.bestOffer.expiresAt.format('HH:mm:ss')}`
+            `${alreadySold ? 'SOLD' : 'EXPIRES'} AT ${item.bestOffer.expiresAt.format('HH:mm:ss')}`
           }
         </div>
 

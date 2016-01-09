@@ -32,12 +32,6 @@ const getExpiration = () => {
 }
 
 export const newBid = ({ amount, bidderName, itemId, comment }) => {
-  /*
-    TODO:
-      - send dehydrated object to db
-        - use moment string
-      - handle moment rehydration
-  */
   const id = newBidId();
   const createdAt = moment();
   const expiresAt = getExpiration();
@@ -63,11 +57,11 @@ export const newBid = ({ amount, bidderName, itemId, comment }) => {
   return { type: NEW_BID, createdAt, expiresAt, ...bid };
 }
 
-export const itemSold = (itemId, bidId) => ({
-  type: ITEM_SOLD,
-  itemId: itemId,
-  bidId: bidId
-});
+// export const itemSold = (itemId, bidId) => ({
+//   type: ITEM_SOLD,
+//   itemId: itemId,
+//   bidId: bidId
+// });
 
 export const setState = (dbState) => ({
   type: SET_STATE,

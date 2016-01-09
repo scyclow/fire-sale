@@ -9,24 +9,6 @@
       "bidId": "x",
       "comment": "this thing fuckn rocks",
       "itemId": "x"
-    },
-    "0": {
-      "createdAt": "2016-01-05T13:49:40-06:00",
-      "expiresAt": "2016-01-07T15:49:40-06:00",
-      "amount": 100,
-      "bidderName": "Steve",
-      "bidId": 0,
-      "comment": "this thing fuckn rocks",
-      "itemId": 1
-    },
-    "1": {
-      "createdAt": "2016-01-05T13:49:40-06:00",
-      "expiresAt": "2016-01-09T15:49:40-06:00",
-      "amount": 200,
-      "bidderName": "Bill",
-      "bidId": 1,
-      "comment": "this thing fuckn rocks",
-      "itemId": 2
     }
   },
   "items": {
@@ -40,112 +22,286 @@
       "soldId": null
     },
     "1": {
-      "name": "bed",
+      "name": "Bed/boxspring/frame - pickup 1/14",
       "id": 1,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [0],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "2": {
-      "name": "couch",
+      "name": "rug",
       "id": 2,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [1],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "3": {
-      "name": "table",
+      "name": "polaroid",
       "id": 3,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "4": {
-      "name": "bleh",
+      "name": "cofee table",
       "id": 4,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "5": {
-      "name": "scisors",
+      "name": "moniter",
       "id": 5,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "6": {
-      "name": "hat",
+      "name": "speakers/subwoofer",
       "id": 6,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "7": {
-      "name": "bong",
+      "name": "silver lamp",
       "id": 7,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "8": {
-      "name": "machete",
+      "name": "camping chair",
       "id": 8,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "9": {
-      "name": "speakers",
+      "name": "white board",
       "id": 9,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "10": {
-      "name": "thing",
+      "name": "ball-maze",
       "id": 10,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "11": {
-      "name": "idunno",
+      "name": "vaporizer",
       "id": 11,
-      "notes": "pickup on 1/14",
-      "imgUrl": "http://sdfgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
     },
     "12": {
-      "name": "more crap",
+      "name": "ikea glass",
       "id": 12,
-      "notes": "seen lots of 'action', if ya know what i mean.",
-      "imgUrl": "http://sdfjjhgsrg.com",
-      "bids": [],
-      "minBid": 20,
-      "soldId": null
+      "notes": "something",
+      "bids": []
+    },
+    "13": {
+      "name": "drone",
+      "id": 13,
+      "notes": "something",
+      "bids": []
+    },
+    "14": {
+      "name": "flexy ball",
+      "id": 14,
+      "notes": "something",
+      "bids": []
+    },
+    "15": {
+      "name": "halloween lights",
+      "id": 15,
+      "notes": "something",
+      "bids": []
+    },
+    "16": {
+      "name": "machete",
+      "id": 16,
+      "notes": "something",
+      "bids": []
+    },
+    "17": {
+      "name": "triangle table",
+      "id": 17,
+      "notes": "something",
+      "bids": []
+    },
+    "18": {
+      "name": "shitty speakers",
+      "id": 18,
+      "notes": "something",
+      "bids": []
+    },
+    "19": {
+      "name": "desk",
+      "id": 19,
+      "notes": "something",
+      "bids": []
+    },
+    "20": {
+      "name": "desk chair",
+      "id": 20,
+      "notes": "something",
+      "bids": []
+    },
+    "21": {
+      "name": "small book case",
+      "id": 21,
+      "notes": "something",
+      "bids": []
+    },
+    "22": {
+      "name": "nerf gun",
+      "id": 22,
+      "notes": "something",
+      "bids": []
+    },
+    "23": {
+      "name": "iron",
+      "id": 23,
+      "notes": "something",
+      "bids": []
+    },
+    "24": {
+      "name": "dust buster",
+      "id": 24,
+      "notes": "something",
+      "bids": []
+    },
+    "25": {
+      "name": "tiny xmas tree",
+      "id": 25,
+      "notes": "something",
+      "bids": []
+    },
+    "26": {
+      "name": "hallway mirror",
+      "id": 26,
+      "notes": "something",
+      "bids": []
+    },
+    "27": {
+      "name": "plunger/toiltte cleaner",
+      "id": 27,
+      "notes": "something",
+      "bids": []
+    },
+    "28": {
+      "name": "$100 bill",
+      "id": 28,
+      "notes": "something",
+      "bids": []
+    },
+    "29": {
+      "name": "candle",
+      "id": 29,
+      "notes": "something",
+      "bids": []
+    },
+    "30": {
+      "name": "casio keyboard/charger",
+      "id": 30,
+      "notes": "something",
+      "bids": []
+    },
+    "31": {
+      "name": "plastic drawers (3)",
+      "id": 31,
+      "notes": "something",
+      "bids": []
+    },
+    "32": {
+      "name": "tower fan",
+      "id": 32,
+      "notes": "something",
+      "bids": []
+    },
+    "33": {
+      "name": "tiny chair",
+      "id": 33,
+      "notes": "something",
+      "bids": []
+    },
+    "34": {
+      "name": "stool",
+      "id": 34,
+      "notes": "something",
+      "bids": []
+    },
+    "35": {
+      "name": "dish drainer (2)",
+      "id": 35,
+      "notes": "something",
+      "bids": []
+    },
+    "36": {
+      "name": "spike rack/spices",
+      "id": 36,
+      "notes": "something",
+      "bids": []
+    },
+    "37": {
+      "name": "glitter pack",
+      "id": 37,
+      "notes": "something",
+      "bids": []
+    },
+    "38": {
+      "name": "toaster",
+      "id": 38,
+      "notes": "something",
+      "bids": []
+    },
+    "39": {
+      "name": "toaster oven",
+      "id": 39,
+      "notes": "something",
+      "bids": []
+    },
+    "40": {
+      "name": "microwave",
+      "id": 40,
+      "notes": "something",
+      "bids": []
+    },
+    "41": {
+      "name": "kitchen garbage",
+      "id": 41,
+      "notes": "something",
+      "bids": []
+    },
+    "42": {
+      "name": "parabolic mirror",
+      "id": 42,
+      "notes": "something",
+      "bids": []
+    },
+    "43": {
+      "name": "toilette paper",
+      "id": 43,
+      "notes": "something",
+      "bids": []
+    },
+    "44": {
+      "name": "sardine pack",
+      "id": 44,
+      "notes": "something",
+      "bids": []
+    },
+    "45": {
+      "name": "brita/filter packs",
+      "id": 45,
+      "notes": "something",
+      "bids": []
+    },
+    "46": {
+      "name": "laundry detergent",
+      "id": 46,
+      "notes": "something",
+      "bids": []
+    },
+    "47": {
+      "name": "deck furniture",
+      "id": 47,
+      "notes": "something",
+      "bids": []
     }
   }
 }

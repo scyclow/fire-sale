@@ -11,7 +11,9 @@ class BidForm extends Component {
     const comment = this.refs.comment.value || _.sample([
       'What a great deal!',
       'Steve\'s so cool! What a guy!',
-
+      'Wow, this is a steal! I should buy more stuff!',
+      '',
+      'Steve\'s so fucking cool. I wish I were him!'
     ]);
 
     if (!bidderName) {
@@ -34,8 +36,9 @@ class BidForm extends Component {
   }
 
   _onKeyPress = (e) => {
-    // TODO if enter, submit
-    console.log(e.keyCode)
+    if (e.nativeEvent.keyCode === 13) {
+      this._createBid();
+    }
   }
 
   render() {

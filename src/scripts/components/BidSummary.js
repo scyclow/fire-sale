@@ -7,6 +7,9 @@ class BidSummary extends Component {
 
     return (
       <div className="bid-summary">
+        {!bids.length &&
+          <div className="bid">No bids yet!</div>
+        }
         {bids && bids.reverse().map(bid => (
           <div className="bid" key={bid.bidId}>
             <span className="bid-info">

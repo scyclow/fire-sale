@@ -19,15 +19,22 @@ class App extends React.Component {
     const { children, isMobile, screenWidth } = this.props;
     const linkWidth = {width: (isMobile ? '50%' : '100%')};
 
+    const mobileNav = (
+      <NavBar screenWidth={screenWidth}>
+        <Link to="/" style={linkWidth}>ITEMS</Link>
+        <Link to="/summary" style={linkWidth}>BIDS</Link>
+      </NavBar>
+    );
+
+    const desktopNav = (
+       <NavBar screenWidth={screenWidth}>
+        <Link to="/" style={linkWidth}>ALL BIDS</Link>
+      </NavBar>
+    );
+
     return (
       <div>
-        <NavBar screenWidth={screenWidth}>
-          <Link to="/" style={linkWidth}>BUY MY CRAP</Link>
-          {
-            isMobile &&
-            <Link to="/summary" style={linkWidth}>All Bids</Link>
-          }
-        </NavBar>
+        { isMobile ? mobileNav : desktopNav }
         <ScreenSplit showNavigator={!isMobile}>
           <ItemNav />
           <div>{children}</div>

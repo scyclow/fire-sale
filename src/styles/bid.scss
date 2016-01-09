@@ -11,6 +11,8 @@
   .bid {
     font-size: 2em;
     margin-bottom: 1em;
+    border-bottom: 2px dashed $black;
+    padding-bottom: 0.5em;
   }
 
   .bidder-name {

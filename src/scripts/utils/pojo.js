@@ -1,3 +1,6 @@
+// Turn Immutable objects into Plain Old JavaScript Objects
+// Map keys to values
+
 const pojo = (state) => ({
   item(item) {
     item = item.toJS ? item.toJS() : item;
