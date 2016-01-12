@@ -18,8 +18,8 @@ class BidForm extends Component {
 
     if (!bidderName) {
       this.setState({ error: 'Enter your name' });
-    } else if (amount !== 0 && !amount) {
-      this.setState({ error: 'Enter a valid amount' });
+    } else if ((amount !== 0 && !amount) || amount % 1 !== 0) {
+      this.setState({ error: 'Enter a valid INTEGER' });
     } else {
       const itemId = this.props.item.id;
 

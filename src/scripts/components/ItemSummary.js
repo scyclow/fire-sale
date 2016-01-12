@@ -38,7 +38,6 @@ class ItemSummary extends Component {
     );
 
     const itemReady = (
-      item.bestOffer &&
       now.diff(moment('2016-01-09T17:59:59-06:00')) > 0
     );
 
